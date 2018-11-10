@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LTYAdViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    [NSThread sleepForTimeInterval:1];//启动界面停留1秒
+    self.window.rootViewController = [[LTYAdViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
