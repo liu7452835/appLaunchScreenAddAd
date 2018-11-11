@@ -24,11 +24,13 @@
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.titleLabel.font = [UIFont systemFontOfSize:15];
-    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     //[self setTitle:@"跳过" forState:UIControlStateNormal];
+    self.backgroundColor = [UIColor grayColor];
+    self.alpha = 0.5;
     self.layer.cornerRadius = 5;
     self.layer.borderWidth = 1.0;
-    self.layer.borderColor = [UIColor blackColor].CGColor;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 @end

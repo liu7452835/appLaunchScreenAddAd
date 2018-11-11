@@ -18,6 +18,8 @@
 @property(nonatomic,weak) IBOutlet UIImageView *adImageView;
 @property (weak, nonatomic) IBOutlet AdSkip *adSkipButton;
 @property(nonatomic,strong) AdViewModel *adVM;
+@property (weak, nonatomic) IBOutlet UIButton *adLink;
+
 @end
 
 @implementation LTYAdViewController
@@ -58,10 +60,20 @@
         self.adImageView.transform = CGAffineTransformMakeScale(1.5f, 1.5f);
         self.adImageView.alpha = 0.f;
         self.adSkipButton.hidden = YES;
+        self.adLink.hidden = YES;
     } completion:^(BOOL finished) {
         //显示完广告后的动作
     }];
 }
+
+#pragma mark - 广告链接
+
+- (IBAction)adLink:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"] options:@{} completionHandler:^(BOOL success) {
+        
+    }];
+}
+
 
 #pragma mark - 倒计时
 -(void)startTime{

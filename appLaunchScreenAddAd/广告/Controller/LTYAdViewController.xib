@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LTYAdViewController">
             <connections>
                 <outlet property="adImageView" destination="83d-rP-sGw" id="cq8-hr-AiP"/>
+                <outlet property="adLink" destination="ZPS-fw-WnA" id="joo-fT-G7M"/>
                 <outlet property="adSkipButton" destination="Yg7-8n-RIh" id="Kuk-Mi-VE8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="yWr-W3-eMB"/>
             </connections>
@@ -24,6 +25,12 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="83d-rP-sGw" userLabel="广告图片">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-fw-WnA" userLabel="广告链接">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="adLink:" destination="-1" eventType="touchUpInside" id="w5Q-Qp-hFo"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-8n-RIh" customClass="AdSkip">
                     <rect key="frame" x="309" y="20" width="50" height="25"/>
                     <constraints>
@@ -39,6 +46,10 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="83d-rP-sGw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="83G-VB-mZd"/>
+                <constraint firstItem="ZPS-fw-WnA" firstAttribute="trailing" secondItem="83d-rP-sGw" secondAttribute="trailing" id="Q6y-YJ-g2G"/>
+                <constraint firstItem="ZPS-fw-WnA" firstAttribute="leading" secondItem="83d-rP-sGw" secondAttribute="leading" id="Sgp-Hg-qkG"/>
+                <constraint firstItem="ZPS-fw-WnA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bkh-NT-Ido"/>
+                <constraint firstItem="ZPS-fw-WnA" firstAttribute="top" secondItem="83d-rP-sGw" secondAttribute="top" id="gYi-HP-isX"/>
                 <constraint firstItem="83d-rP-sGw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="jzk-O6-eVe"/>
                 <constraint firstItem="83d-rP-sGw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k3i-fu-DYl"/>
                 <constraint firstAttribute="trailing" secondItem="83d-rP-sGw" secondAttribute="trailing" id="lI6-15-BMM"/>
