@@ -12,7 +12,7 @@
 
 @interface AdViewModel ()
 
-@property(nonatomic,readwrite)AdModel * adModel;
+@property(nonatomic,strong)AdModel * adModel;
 @end
 
 
@@ -26,6 +26,16 @@
         self.adModel = responseObject;
         completed(error);
     }];
+}
+
+- (NSURL *)adURLAndAllowRandom:(BOOL)allowRandom{
+    if (allowRandom) {
+        NSInteger i = arc4random() % self.adModel.ads.count;
+        NSInteger j = arc4random() % self.adModel.ads[i].res_url.count;
+        return [NSURL URLWithString:self.adModel.ads[i].res_url[j]];
+    }else{
+        return [NSURL URLWithString:self.adModel.ads[0].res_url[0]];
+    }
 }
 
 - (AdModel *)adModel{

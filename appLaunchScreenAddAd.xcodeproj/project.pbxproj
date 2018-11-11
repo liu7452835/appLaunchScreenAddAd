@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		090447272188983B009CE58C /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 090447262188983B009CE58C /* BaseNetManager.m */; };
 		0904472C2188B209009CE58C /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0904472B2188B209009CE58C /* BaseViewModel.m */; };
+		090B80A22197F00A00EB529A /* AdSkip.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B80A12197F00A00EB529A /* AdSkip.m */; };
 		0941F80D2185F42E009415F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941F80C2185F42E009415F7 /* AppDelegate.m */; };
 		0941F8152185F42F009415F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0941F8142185F42F009415F7 /* Assets.xcassets */; };
 		0941F81B2185F42F009415F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941F81A2185F42F009415F7 /* main.m */; };
@@ -27,6 +28,8 @@
 		0904472921889C52009CE58C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0904472A2188B209009CE58C /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		0904472B2188B209009CE58C /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		090B80A02197F00A00EB529A /* AdSkip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdSkip.h; sourceTree = "<group>"; };
+		090B80A12197F00A00EB529A /* AdSkip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdSkip.m; sourceTree = "<group>"; };
 		0941F8082185F42E009415F7 /* appLaunchScreenAddAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appLaunchScreenAddAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0941F80B2185F42E009415F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0941F80C2185F42E009415F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		0941F8272185F4D6009415F7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				090B80A02197F00A00EB529A /* AdSkip.h */,
+				090B80A12197F00A00EB529A /* AdSkip.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				0941F8232185F48B009415F7 /* LTYAdViewController.m in Sources */,
 				09A081D82189E60F0025DED5 /* AdViewModel.m in Sources */,
 				0941F81B2185F42F009415F7 /* main.m in Sources */,
+				090B80A22197F00A00EB529A /* AdSkip.m in Sources */,
 				0941F80D2185F42E009415F7 /* AppDelegate.m in Sources */,
 				0904472C2188B209009CE58C /* BaseViewModel.m in Sources */,
 			);

@@ -12,7 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AdViewModel : BaseViewModel
-@property(nonatomic,readonly) AdModel *adModel;
+
+-(NSURL *)adURLAndAllowRandom:(BOOL)allowRandom;
+
 @end
 
 NS_ASSUME_NONNULL_END
